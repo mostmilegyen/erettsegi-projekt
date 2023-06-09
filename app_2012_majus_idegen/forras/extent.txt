@@ -1,0 +1,7 @@
+id	nev
+1	lane narrowing
+2	lane closure
+3	carriageway closure
+4	complete closure
+5	no closure
+6	passable with difficulty

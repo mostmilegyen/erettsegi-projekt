@@ -1,0 +1,12 @@
+id	nev
+1	cable laying
+2	junction construction
+3	pothole patching
+4	road construction
+5	asphalt milling
+6	flood
+7	asphalting
+8	gap sealing
+9	rut elimination
+10	canal
+11	ditch and shoulder maintenance

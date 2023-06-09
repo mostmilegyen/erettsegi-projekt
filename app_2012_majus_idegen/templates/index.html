@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+    <title>Traffic restriction</title>
+  </head>
+  <body>
+    <main>
+      <h1>Traffic restriction</h1>
+      <p>Válaszd ki a feladatot:</p>
+      <ul>
+        <li>
+          <a href="feladat/2miskolc" class="task-link">2miskolc</a>
+        </li>
+        <li>
+          <a href="feladat/3accordingtotime" class="task-link">3accordingtotime</a>
+        </li>
+        <li>
+          <a href="feladat/4junction" class="task-link">4junction</a>
+        </li>
+        <li>
+          <a href="feladat/5four" class="task-link">5four</a>
+        </li>
+        <li>
+          <a href="feladat/6average" class="task-link">6average</a>
+        </li>
+        <li>
+          <a href="feladat/7roadreport" class="task-link">7roadreport</a>
+        </li>
+      </ul>
+      <a href="upload">Forrás feltöltése</a>
+    </main>
+  </body>
+</html>

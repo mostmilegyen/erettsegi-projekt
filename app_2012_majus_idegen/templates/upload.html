@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/upload.css' %}" />
+    <title>Forrás feltöltése</title>
+  </head>
+  <body>
+    <main>
+      <h1>Forrás feltöltése</h1>
+      <a href="..">Vissza</a>
+      <form action="uploaded/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="extent" class="file-upload">
+          extent.txt
+          <input
+            id="extent"
+            class="file-upload-input"
+            type="file"
+            name="extent"
+            required
+          />
+          <span class="file-upload-label">Fájlválasztás</span>
+        </label>
+
+        <label for="naming" class="file-upload">
+          naming.txt
+          <input
+            id="naming"
+            class="file-upload-input"
+            type="file"
+            name="naming"
+            required
+          />
+          <span class="file-upload-label">Fájlválasztás</span>
+        </label>
+
+        <label for="restriction" class="file-upload">
+          restriction.txt
+          <input
+            id="restriction"
+            class="file-upload-input"
+            type="file"
+            name="restriction"
+            required
+          />
+          <span class="file-upload-label">Fájlválasztás</span>
+        </label>
+
+        <button type="submit" class="file-upload">Feltöltés</button>
+      </form>
+    </main>
+  </body>
+</html>

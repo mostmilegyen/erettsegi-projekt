@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/feladat.css' %}">
+    <title>Traffic restriction - 2miskolc</title>
+  </head>
+  <body>
+    <main>
+      <h1>2miskolc</h1>
+      <a href="..">Vissza</a>
+      <p>A miskolci korlátozások:</p>
+      <table>
+        <thead>
+            <tr>
+                <th>Road number</th>
+                <th>From point</th>
+                <th>To point</th>
+                <th>From when</th>
+                <th>To when</th>
+            </th>
+        </thead>
+        <tbody>
+            {% for restriction in restrictions %}
+                <tr>
+                    <td>{{ restriction.roadnumber }}</td>
+                    <td>{{ restriction.frompoint }}</td>
+                    <td>{{ restriction.topoint }}</td>
+                    <td>{{ restriction.fromwhen }}</td>
+                    <td>{{ restriction.towhen }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
